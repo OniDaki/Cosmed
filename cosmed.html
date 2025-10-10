@@ -1,0 +1,1320 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+    <script type="text/javascript" src="cosmed.js"></script>
+    <link rel="stylesheet" href="cosmed.css">
+    <title>康是美</title>
+</head>
+<body onpageshow="bodyCosmed()">
+<div id="bg">
+    <div class="header">
+        <div class="logo">
+            <img src="img/康是美logo.jpg" alt="回首頁">
+        </div>
+        <nav class="desktop_menu">
+            <a href="#">商品分類</a>
+            <a href="#">最新活動</a>
+            <a href="#">品牌旗艦館</a>
+            <a href="#">會員超好康</a>
+            <a href="#">好康快訊</a>
+        </nav>
+        <button class="burger"><img src="img/icons8-menu.png" alt="漢堡圖"></button>
+        <nav class="mobile_menu">
+            <a href="#">商品分類</a>
+            <a href="#">最新活動</a>
+            <a href="#">品牌旗艦館</a>
+            <a href="#">會員超好康</a>
+            <a href="#">好康快訊</a>
+        </nav>
+        <div class="iphone">
+            <img src="img/icons8-cellphone-32.png" alt="頂部手機圖案" onmouseenter="displayCode()" onmouseleave="disappearCode()">
+        </div>
+        <div class="member">
+            <img src="img/icons8-customer-32.png" alt="登入會員">
+        </div>
+        <img src="img/downloadCode.png" class="downloadCode" alt="下載app QRCode">
+        <div class="top_cart">
+            <a href="cosmed_cart.html"><img src="img/shopping-cart-white.png" alt="頂部購物車"></a>
+            <p id="cart_num" onmouseenter="displayChosen()" onmouseleave="disappear()">0</p>
+        </div>
+        <p id="products-chosen">
+            <img src="" alt="小商品圖">
+        </p>
+    </div>
+
+    <div class="slider-wrapper">
+        <img class="slider-item" src="img/slide_1.png" alt="Slide1">
+        <img class="slider-item" src="img/slide_2.png" alt="Slide2">
+        <img class="slider-item" src="img/slide_3.png" alt="Slide3">
+    </div>
+
+    <div class="wrap">
+        <!-- 1 -->
+        <div class="item">
+            <img src="img/超人力霸王.png">
+            <div class="txt">
+                <p>滿額即可加購！！</p>
+            </div>
+        </div>
+        <!-- 2 -->
+        <div class="item">
+            <img src="img/超強優惠.png">
+            <div class="txt">
+                <p>超強神券免費領</p>
+            </div>
+        </div>
+        <!-- 3 -->
+        <div class="item">
+            <img src="img/天天簽到.png">
+            <div class="txt">
+                <p>天天簽到賺優惠</p>
+            </div>
+        </div>
+        <!-- 4 -->
+        <div class="item">
+            <img src="img/超值商品.png">
+            <div class="txt">
+                <p>超值商品加購嗎？</p>
+            </div>
+        </div>
+        <!-- 5 -->
+        <div class="item">
+            <img src="img/買一送一.png">
+            <div class="txt">
+                <p>美麗迎新買1送1</p>
+            </div>
+        </div>
+        <!-- 6 -->
+        <div class="item">
+            <img src="img/溫暖妙招.png">
+            <div class="txt">
+                <p>抗寒必備6折起</p>
+            </div>
+        </div>
+        <!-- 7 -->
+        <div class="item">
+            <img src="img/週週便宜.png">
+            <div class="txt">
+                <p>週週好給利<br>週週好便宜</p>
+            </div>
+        </div>
+        <!-- 8 -->
+        <div class="item">
+            <img src="img/新春好運.png">
+            <div class="txt">
+                <p>指定品滿738折50</p>
+            </div>
+        </div>
+        <!-- 9 -->
+        <div class="item">
+            <img src="img/保健禮盒.png">
+            <div class="txt">
+                <p>保健禮盒精選5折起</p>
+            </div>
+        </div>
+        <!-- 10 -->
+        <div class="item">
+            <img src="img/除舊佈新.png">
+            <div class="txt">
+                <p>除舊布新用品5折起</p>
+            </div>
+        </div>
+    </div>
+
+    <div class="slider-wrapper2">
+        <img class="slider-item" src="img/悠遊付.png" alt="Slide1">
+        <img class="slider-item" src="img/open_point.png" alt="Slide2">
+        <img class="slider-item" src="img/銀行優惠.png" alt="Slide3">
+    </div>
+
+    <figure class="image-banner__frame">
+        <img loading="lazy" class="image-banner__picture" alt="BannerA-1" src="img/熱銷88折.png">
+    </figure>
+
+<!-- 第一區塊商品 -->
+    <!-- 商品第一排（桃紅背景） -->
+    <div class="products">
+        <div class="product-container--wrapper">
+            <div class="item">
+                <img src="img/DV笛絲薇夢_醇養妍HA玻尿酸36包入.png">
+                <div class="txt">
+                    <p>DV笛絲薇夢_醇養妍HA玻尿酸36包入</p>
+                </div>
+                <div class="price">
+                    <p class="original">NT$1099</p>
+                    <p class="discount">NT$899</p>
+                </div>
+                <button class="like" id="like_0">
+                    <img src="img/heart.png" class="heart" alt="點讚收藏">
+                </button>
+                <button class="cart" id="DV笛絲薇夢_醇養妍HA玻尿酸36包入" price="899" originalPrice="1099">
+                    <img src="img/shopping-cart.png" alt="商品小車">
+                </button>
+            </div>
+        
+            <div class="item">
+                <img src="img/潘婷頭皮髮根精華液60毫升.png">
+                <div class="txt">
+                    <p>潘婷頭皮髮根精華液60毫升</p>
+                </div>
+                <div class="price">
+                    <p class="original">NT$799</p>
+                    <p class="discount">NT$699</p>
+                </div>
+                <button class="like" id="like_1">
+                    <img src="img/heart.png" class="heart" alt="點讚收藏">
+                </button>
+                <button class="cart" id="潘婷頭皮髮根精華液60毫升" price="699" originalPrice="799">
+                    <img src="img/shopping-cart.png" alt="商品小車">
+                </button>
+            </div>
+
+            <div class="item">
+                <img src="img/Rerise髮色復黑菁華乳蓬鬆量感型自然黑190gx8入團購組.png">
+                <div class="txt">
+                    <p>Rerise髮色復黑菁華乳蓬鬆量感型自然黑190g x8入團購組</p>
+                </div>
+                <div class="price">
+                    <p class="original">NT$7,552</p>
+                    <p class="discount">NT$6,510</p>
+                </div>
+                <button class="like" id="like_2">
+                    <img src="img/heart.png" class="heart" alt="點讚收藏">
+                </button>
+                <button class="cart" id="Rerise髮色復黑菁華乳蓬鬆量感型自然黑190gx8入團購組" price="6510" originalPrice="7552">
+                    <img src="img/shopping-cart.png" alt="商品小車">
+                </button>
+            </div>
+
+            <div class="item">
+                <img src="img/SungboonEditor綠番茄去角質棉片60片.png">
+                <div class="txt">
+                    <p>SungboonEditor綠番茄去角質棉片60片</p>
+                </div>
+                <div class="price">
+                    <p>NT$599</p>
+                </div>
+                <button class="like" id="like_3">
+                    <img src="img/heart.png" class="heart" alt="點讚收藏">
+                </button>
+                <button class="cart" id="SungboonEditor綠番茄去角質棉片60片" price="599" originalPrice="0">
+                    <img src="img/shopping-cart.png" alt="商品小車">
+                </button>
+            </div>
+        </div>
+    
+        <!-- 商品第二排（桃紅背景） -->
+        <div class="product-container--wrapper">
+            <div class="item">
+                <img src="img/AHC大馬士革玫瑰全臉六角修護緊緻眼霜40ML.png">
+                <div class="txt">
+                    <p>AHC大馬士革玫瑰全臉六角修護緊緻眼霜40ML(2/6依序出貨)</p>
+                </div>
+                <div class="price">
+                    <p class="original">NT$600</p>
+                    <p class="discount">NT$400</p>
+                </div>
+                <button class="like" id="like_4">
+                    <img src="img/heart.png" class="heart" alt="點讚收藏">
+                </button>
+                <button class="cart" id="AHC大馬士革玫瑰全臉六角修護緊緻眼霜40ML" price="400" originalPrice="600">
+                    <img src="img/shopping-cart.png" alt="商品小車">
+                </button>
+            </div>
+
+            <div class="item">
+                <img src="img/成人醫療口罩.png">
+                <div class="txt">
+                    <p>成人醫療口罩_酷黑(50片/盒)</p>
+                </div>
+                <div class="price">
+                    <p class="original">NT$300</p>
+                    <p class="discount">NT$200</p>
+                </div>
+                <button class="like" id="like_5">
+                    <img src="img/heart.png" class="heart" alt="點讚收藏">
+                </button>
+                <button class="cart" id="成人醫療口罩" price="200" originalPrice="300">
+                    <img src="img/shopping-cart.png" alt="商品小車">
+                </button>
+            </div>
+
+            <div class="item">
+                <img src="img/舒酸定3加1超值組牙齦護理.png">
+                <div class="txt">
+                    <p>舒酸定3＋1超值組牙齦護理</p>
+                </div>
+                <div class="price">
+                    <p>NT$399</p>
+                </div>
+                <button class="like" id="like_6">
+                    <img src="img/heart.png" class="heart" alt="點讚收藏">
+                </button>
+                <button class="cart" id="舒酸定3加1超值組牙齦護理" price="399" originalPrice="0">
+                    <img src="img/shopping-cart.png" alt="商品小車">
+                </button>
+            </div>
+
+            <div class="item">
+                <img src="img/洗衣膠囊抗菌去漬款補充包.png">
+                <div class="txt">
+                    <p>ARIEL 4D抗菌洗衣膠囊抗菌去漬款補充包-30個入</p>
+                </div>
+                <div class="price">
+                    <p>NT$289</p>
+                </div>
+                <button class="like" id="like_7">
+                    <img src="img/heart.png" class="heart" alt="點讚收藏">
+                </button>
+                <button class="cart" id="洗衣膠囊抗菌去漬款補充包" price="289" originalPrice="0">
+                    <img src="img/shopping-cart.png" alt="商品小車">
+                </button>
+            </div>
+        </div>
+
+        <!-- 商品第三排（桃紅背景） -->
+        <div class="product-container--wrapper">
+            <div class="item">
+                <img src="img/雪芙蘭高效透亮美白潤膚乳液350g.png">
+                <div class="txt">
+                    <p>雪芙蘭高效透亮美白潤膚乳液350g</p>
+                </div>
+                <div class="price">
+                    <p>NT$179</p>
+                </div>
+                <button class="like" id="like_8">
+                    <img src="img/heart.png" class="heart" alt="點讚收藏">
+                </button>
+                <button class="cart" id="雪芙蘭高效透亮美白潤膚乳液350g" price="179" originalPrice="0">
+                    <img src="img/shopping-cart.png" alt="商品小車">
+                </button>
+            </div>
+
+            <div class="item">
+                <img src="img/嬌生pH5.5二合一潤膚沐浴乳1000ML.png">
+                <div class="txt">
+                    <p>嬌生pH5.5 二合一潤膚沐浴乳1000ML</p>
+                </div>
+                <div class="price">
+                    <p>NT$159</p>
+                </div>
+                <button class="like" id="like_9">
+                    <img src="img/heart.png" class="heart" alt="點讚收藏">
+                </button>
+                <button class="cart" id="嬌生pH5.5二合一潤膚沐浴乳1000ML" price="159" originalPrice="0">
+                    <img src="img/shopping-cart.png" alt="商品小車">
+                </button>
+            </div>
+
+            <div class="item">
+                <img src="img/來一客料理包上湯獅子頭包190g.png">
+                <div class="txt">
+                    <p>來一客料理包上湯獅子頭包190g</p>
+                </div>
+                <div class="price">
+                    <p>NT$59</p>
+                </div>
+                <button class="like" id="like_10">
+                    <img src="img/heart.png" class="heart" alt="點讚收藏">
+                </button>
+                <button class="cart" id="來一客料理包上湯獅子頭包190g" price="59" originalPrice="0">
+                    <img src="img/shopping-cart.png" alt="商品小車">
+                </button>
+            </div>
+
+            <div class="item">
+                <img src="img/星巴克臻選綜合蛋捲禮盒.png">
+                <div class="txt">
+                    <p>星巴克臻選綜合蛋捲禮盒</p>
+                </div>
+                <div class="price">
+                    <p>NT$493</p>
+                </div>
+                <button class="like" id="like_11">
+                    <img src="img/heart.png" class="heart" alt="點讚收藏">
+                </button>
+                <button class="cart" id="星巴克臻選綜合蛋捲禮盒" price="493" originalPrice="0">
+                    <img src="img/shopping-cart.png" alt="商品小車">
+                </button>
+            </div>
+        </div>
+
+        <a href="#"><img loading="lazy" class="image-banner__picture" alt="BannerA-1" src="img/看更多按鈕.png"></a>
+    </div>
+
+<!-- 第二區塊商品 -->
+    <!-- 第一排 -->
+    <div class="product-container--wrapper2">
+        <div class="item">
+            <img src="img/韓國WOONGJIN熊津紅蔘飲8入組.png">
+            <div class="txt">
+                <p>韓國WOONGJIN熊津紅蔘飲8入組-2款可選</p>
+            </div>
+            <div class="price">
+                <p>NT$552</p>
+            </div>
+            <button class="like" id="like_12">
+                <img src="img/heart.png" class="heart" alt="點讚收藏">
+            </button>
+            <button class="cart" id="韓國WOONGJIN熊津紅蔘飲8入組" price="552" originalPrice="0">
+                <img src="img/shopping-cart.png" alt="商品小車">
+            </button>
+        </div>
+
+        <div class="item">
+            <img src="img/OZIO歐姬兒_蜂王乳凝露75g.png">
+            <div class="txt">
+                <p>OZIO歐姬兒_蜂王乳凝露75g（全新改版）</p>
+            </div>
+            <div class="price">
+                <p class="original">NT$980</p>
+                <p class="discount">NT$750</p>
+            </div>
+            <button class="like" id="like_13">
+                <img src="img/heart.png" class="heart" alt="點讚收藏">
+            </button>
+            <button class="cart" id="OZIO歐姬兒_蜂王乳凝露75g" price="750" originalPrice="980">
+                <img src="img/shopping-cart.png" alt="商品小車">
+            </button>
+        </div>
+
+        <div class="item">
+            <img src="img/SOFINA蘇菲娜_漾緁控油瓷效妝前隔離乳進化版.png">
+            <div class="txt">
+                <p>SOFINA蘇菲娜_漾緁控油瓷效妝前隔離乳進化版25ml</p>
+            </div>
+            <div class="price">
+                <p>NT$350</p>
+            </div>
+            <button class="like" id="like_14">
+                <img src="img/heart.png" class="heart" alt="點讚收藏">
+            </button>
+            <button class="cart" id="SOFINA蘇菲娜_漾緁控油瓷效妝前隔離乳進化版" price="350" originalPrice="0">
+                <img src="img/shopping-cart.png" alt="商品小車">
+            </button>
+        </div>
+
+        <div class="item">
+            <img src="img/Drs.Formula恆采固色洗髮精.png">
+            <div class="txt">
+                <p>洗髮精推薦 Drs Formula恆采固色洗髮精（清爽空氣感）580g</p>
+            </div>
+            <div class="price">
+                <p>NT$199</p>
+            </div>
+            <button class="like" id="like_15">
+                <img src="img/heart.png" class="heart" alt="點讚收藏">
+            </button>
+            <button class="cart" id="Drs.Formula恆采固色洗髮精" price="199" originalPrice="0">
+                <img src="img/shopping-cart.png" alt="商品小車">
+            </button>
+        </div>
+    </div>
+
+    <!-- 第二排 -->
+    <div class="product-container--wrapper2">
+        <div class="item">
+            <img src="img/古寶無患子神奇檸檬泡沫水垢清潔劑_500g.png">
+            <div class="txt">
+                <p>古寶無患子神奇檸檬泡沫水垢清潔劑_500g</p>
+            </div>
+            <div class="price">
+                <p>NT$359</p>
+            </div>
+            <button class="like" id="like_16">
+                <img src="img/heart.png" class="heart" alt="點讚收藏">
+            </button>
+            <button class="cart" id="古寶無患子神奇檸檬泡沫水垢清潔劑_500g" price="359" originalPrice="0">
+                <img src="img/shopping-cart.png" alt="商品小車">
+            </button>
+        </div>
+
+        <div class="item">
+            <img src="img/Olitalia奧利塔高溫專用葵花油禮盒組.png">
+            <div class="txt">
+                <p>Olitalia奧利塔高溫專用葵花油禮盒組（750mlx2瓶）_廠商直送</p>
+            </div>
+            <div class="price">
+                <p>NT$429</p>
+            </div>
+            <button class="like" id="like_17">
+                <img src="img/heart.png" class="heart" alt="點讚收藏">
+            </button>
+            <button class="cart" id="Olitalia奧利塔高溫專用葵花油禮盒組" price="429" originalPrice="0">
+                <img src="img/shopping-cart.png" alt="商品小車">
+            </button>
+        </div>
+
+        <div class="item">
+            <img src="img/Apple_Airpods4_主動式降躁版.png">
+            <div class="txt">
+                <p>Apple Airpods 4 主動式降躁版</p>
+            </div>
+            <div class="price">
+                <p>NT$5,990</p>
+            </div>
+            <button class="like" id="like_18">
+                <img src="img/heart.png" class="heart" alt="點讚收藏">
+            </button>
+            <button class="cart" id="Apple_Airpods4_主動式降躁版" price="5990" originalPrice="0">
+                <img src="img/shopping-cart.png" alt="商品小車">
+            </button>
+        </div>
+
+        <div class="item">
+            <img src="img/超級瑪利歐兄弟_驚奇主機組合.png">
+            <div class="txt">
+                <p>【預購】【Nintendo Switch任天堂】超級瑪利歐兄弟 驚奇主機組合（2025/2/28依...</p>
+            </div>
+            <div class="price">
+                <p>NT$10,480</p>
+            </div>
+            <button class="like" id="like_19">
+                <img src="img/heart.png" class="heart" alt="點讚收藏">
+            </button>
+            <button class="cart" id="超級瑪利歐兄弟_驚奇主機組合" price="10480" originalPrice="0">
+                <img src="img/shopping-cart.png" alt="商品小車">
+            </button>
+        </div>
+    </div>
+
+    <!-- 第三排 -->
+    <div class="product-container--wrapper2">
+        <div class="item">
+            <img src="img/黃金手鍊手繩多選.png">
+            <div class="txt">
+                <p>【金喜飛來】黃金手鍊手繩多選(0.07錢±0.02)-廠商直送</p>
+            </div>
+            <div class="price">
+                <p>NT$1,888</p>
+            </div>
+            <button class="like" id="like_20">
+                <img src="img/heart.png" class="heart" alt="點讚收藏">
+            </button>
+            <button class="cart" id="黃金手鍊手繩多選" price="1888">
+                <img src="img/shopping-cart.png" alt="商品小車">
+            </button>
+        </div>
+
+        <div class="item">
+            <img src="img/軟式硅藻土瞬吸水速乾止滑地墊.png">
+            <div class="txt">
+                <p>【HOMEMAX】軟式硅藻土瞬吸水速乾止滑地墊- (40x60cm)-多款任選【任選三件指定...</p>
+            </div>
+            <div class="price">
+                <p>NT$399</p>
+            </div>
+            <button class="like" id="like_21">
+                <img src="img/heart.png" class="heart" alt="點讚收藏">
+            </button>
+            <button class="cart" id="軟式硅藻土瞬吸水速乾止滑地墊" price="399" originalPrice="0">
+                <img src="img/shopping-cart.png" alt="商品小車">
+            </button>
+        </div>
+
+        <div class="item">
+            <img src="img/心焙雞精禮盒(14入)x2入團購組.png">
+            <div class="txt">
+                <p>心焙雞精禮盒(14入)x2入團購組</p>
+            </div>
+            <div class="price">
+                <p>NT$2,376</p>
+            </div>
+            <button class="like" id="like_22">
+                <img src="img/heart.png" class="heart" alt="點讚收藏">
+            </button>
+            <button class="cart" id="心焙雞精禮盒(14入)x2入團購組" price="2376" originalPrice="0">
+                <img src="img/shopping-cart.png" alt="商品小車">
+            </button>
+        </div>
+
+        <div class="item">
+            <img src="img/蛇年生肖紀念金幣icash2.0.png">
+            <div class="txt">
+                <p>【愛金卡】蛇年生肖紀念金幣 icash2.0</p>
+            </div>
+            <div class="price">
+                <p>NT$299</p>
+            </div>
+            <button class="like" id="like_23">
+                <img src="img/heart.png" class="heart" alt="點讚收藏">
+            </button>
+            <button class="cart" id="蛇年生肖紀念金幣icash2.0" price="299" originalPrice="0">
+                <img src="img/shopping-cart.png" alt="商品小車">
+            </button>
+        </div>
+    </div>
+
+    <div class="slider-wrapper3">
+        <img class="slider-item" src="img/開運年貨節.png" alt="Slide1">
+        <img class="slider-item" src="img/煥新美顏.png" alt="Slide2">
+        <img class="slider-item" src="img/好保健.png" alt="Slide3">
+    </div>
+
+<!-- 第三區塊商品 -->
+    <!-- 第一排 -->
+    <div class="products_thirdPart">
+        <div class="product-container--wrapper3">
+            <div class="item">
+                <img src="img/BHKs紅萃蔓越莓益生菌錠團購組.png">
+                <div class="txt">
+                    <p>BHK’s 紅萃蔓越莓益生菌錠 (30粒/袋) x5入團購組</p>
+                </div>
+                <div class="price">
+                    <p>NT$1,256</p>
+                </div>
+                <button class="like" id="like_24">
+                    <img src="img/heart.png" class="heart" alt="點讚收藏">
+                </button>
+                <button class="cart" id="BHKs紅萃蔓越莓益生菌錠團購組" price="1256" originalPrice="0">
+                    <img src="img/shopping-cart.png" alt="商品小車">
+                </button>
+            </div>
+
+            <div class="item">
+                <img src="img/Richvita利捷維有酵金盞花葉黃素凍18入.png">
+                <div class="txt">
+                    <p>Richvita利捷維有酵金盞花葉黃素凍18入</p>
+                </div>
+                <div class="price">
+                    <p>NT$890</p>
+                </div>
+                <button class="like" id="like_25">
+                    <img src="img/heart.png" class="heart" alt="點讚收藏">
+                </button>
+                <button class="cart" id="Richvita利捷維有酵金盞花葉黃素凍18入" price="890" originalPrice="0">
+                    <img src="img/shopping-cart.png" alt="商品小車">
+                </button>
+            </div>
+
+            <div class="item">
+                <img src="img/善存3效順暢益生菌粉末顆粒40入.png">
+                <div class="txt">
+                    <p>善存3效順暢益生菌粉末顆粒40入 （每入2克）（新舊包裝隨機出貨）</p>
+                </div>
+                <div class="price">
+                    <p>NT$849</p>
+                </div>
+                <button class="like" id="like_26">
+                    <img src="img/heart.png" class="heart" alt="點讚收藏">
+                </button>
+                <button class="cart" id="善存3效順暢益生菌粉末顆粒40入" price="849" originalPrice="0">
+                    <img src="img/shopping-cart.png" alt="商品小車">
+                </button>
+            </div>
+
+            <div class="item">
+                <img src="img/咕嚕咕嚕超纖酵素粉.png">
+                <div class="txt">
+                    <p>Diu＋咕嚕咕嚕超纖酵素粉（莓果綜合酵素粉） 14包入/盒</p>
+                </div>
+                <div class="price">
+                    <p>NT$748</p>
+                </div>
+                <button class="like" id="like_27">
+                    <img src="img/heart.png" class="heart" alt="點讚收藏">
+                </button>
+                <button class="cart" id="咕嚕咕嚕超纖酵素粉" price="748" originalPrice="0">
+                    <img src="img/shopping-cart.png" alt="商品小車">
+                </button>
+            </div>
+        </div>
+
+        <!-- 第二排 -->
+        <div class="product-container--wrapper3">
+            <div class="item">
+                <img src="img/Simply新普利食事油切酵素錠EX(30錠)x2入團購組.png">
+                <div class="txt">
+                    <p>Simply 新普利食事油切酵素錠EX(30錠) x2入團購組</p>
+                </div>
+                <div class="price">
+                    <p>NT$1,480</p>
+                </div>
+                <button class="like" id="like_28">
+                    <img src="img/heart.png" class="heart" alt="點讚收藏">
+                </button>
+                <button class="cart" id="Simply新普利食事油切酵素錠EX(30錠)x2入團購組" price="1480" originalPrice="0">
+                    <img src="img/shopping-cart.png" alt="商品小車">
+                </button>
+            </div>
+
+            <div class="item">
+                <img src="img/m2美度_超能膠原晚安飲.png">
+                <div class="txt">
+                    <p>m2美度 超能膠原晚安飲（8入/盒）</p>
+                </div>
+                <div class="price">
+                    <p>NT$980</p>
+                </div>
+                <button class="like" id="like_29">
+                    <img src="img/heart.png" class="heart" alt="點讚收藏">
+                </button>
+                <button class="cart" id="m2美度_超能膠原晚安飲" price="980" originalPrice="0">
+                    <img src="img/shopping-cart.png" alt="商品小車">
+                </button>
+            </div>
+
+            <div class="item">
+                <img src="img/潤姬桃子.png">
+                <div class="txt">
+                    <p>【URUHIMEMOMOKO】潤姬桃子1.5g-30入 x2入團購組</p>
+                </div>
+                <div class="price">
+                    <p>NT$2,256</p>
+                </div>
+                <button class="like" id="like_30">
+                    <img src="img/heart.png" class="heart" alt="點讚收藏">
+                </button>
+                <button class="cart" id="潤姬桃子" price="2256" originalPrice="0">
+                    <img src="img/shopping-cart.png" alt="商品小車">
+                </button>
+            </div>
+
+            <div class="item">
+                <img src="img/夜食酵素30入.png">
+                <div class="txt">
+                    <p>酵素推薦-【我的健康日記】夜食酵素30入</p>
+                </div>
+                <div class="price">
+                    <p>NT$699</p>
+                </div>
+                <button class="like" id="like_31">
+                    <img src="img/heart.png" class="heart" alt="點讚收藏">
+                </button>
+                <button class="cart" id="夜食酵素30入" price="699" originalPrice="0">
+                    <img src="img/shopping-cart.png" alt="商品小車">
+                </button>
+            </div>
+        </div>
+
+        <a href="#"><img loading="lazy" class="image-banner__picture" alt="BannerA-1" src="img/看更多按鈕.png"></a>
+    </div>
+
+    <div class="slider-wrapper4">
+        <img class="slider-item" src="img/送到心坎裡.png" alt="Slide1">
+        <img class="slider-item" src="img/專櫃保養.png" alt="Slide2">
+        <img class="slider-item" src="img/鎏金妝.png" alt="Slide3">
+    </div>
+
+<!-- 第四區塊商品 -->
+    <!-- 第一排 -->
+    <div class="products_fourthPart">
+        <div class="product-container--wrapper4">
+            <div class="item">
+                <img src="img/怪獸級持色唇膏.png">
+                <div class="txt">
+                    <p>KATE凱婷 怪獸級持色唇膏 03暖陽奶茶</p>
+                </div>
+                <div class="price">
+                    <p>NT$366</p>
+                </div>
+                <button class="like" id="like_32">
+                    <img src="img/heart.png" class="heart" alt="點讚收藏">
+                </button>
+                <button class="cart" id="怪獸級持色唇膏" price="366" originalPrice="0">
+                    <img src="img/shopping-cart.png" alt="商品小車">
+                </button>
+            </div>
+
+            <div class="item">
+                <img src="img/NIVEA妮維雅夜間亮白保濕修護乳液180ml.png">
+                <div class="txt">
+                    <p>NIVEA妮維雅夜間亮白保濕修護乳液180ml</p>
+                </div>
+                <div class="price">
+                    <p>NT$199</p>
+                </div>
+                <button class="like" id="like_33">
+                    <img src="img/heart.png" class="heart" alt="點讚收藏">
+                </button>
+                <button class="cart" id="NIVEA妮維雅夜間亮白保濕修護乳液180ml" price="199" originalPrice="0">
+                    <img src="img/shopping-cart.png" alt="商品小車">
+                </button>
+            </div>
+
+            <div class="item">
+                <img src="img/光透潤極致水潤面膜.png">
+                <div class="txt">
+                    <p>Hada-Labo肌研 光透潤極致水潤面膜(盒裝6入)</p>
+                </div>
+                <div class="price">
+                    <p>NT$299</p>
+                </div>
+                <button class="like" id="like_34">
+                    <img src="img/heart.png" class="heart" alt="點讚收藏">
+                </button>
+                <button class="cart" id="光透潤極致水潤面膜" price="299" originalPrice="0">
+                    <img src="img/shopping-cart.png" alt="商品小車">
+                </button>
+            </div>
+
+            <div class="item">
+                <img src="img/媚比琳裸霧光持久水粉底.png">
+                <div class="txt">
+                    <p>媚比琳裸霧光持久水粉底SPF12 W10 象牙亮白</p>
+                </div>
+                <div class="price">
+                    <p>NT$469</p>
+                </div>
+                <button class="like" id="like_35">
+                    <img src="img/heart.png" class="heart" alt="點讚收藏">
+                </button>
+                <button class="cart" id="媚比琳裸霧光持久水粉底" price="469" originalPrice="0">
+                    <img src="img/shopping-cart.png" alt="商品小車">
+                </button>
+            </div>
+        </div>
+
+        <!-- 第二排 -->
+        <div class="product-container--wrapper4">
+            <div class="item">
+                <img src="img/Loreal康是美紫熨斗寵愛加贈組.png">
+                <div class="txt">
+                    <p>Loreal康是美紫熨斗寵愛加贈組</p>
+                </div>
+                <div class="price">
+                    <p>NT$1,099</p>
+                </div>
+                <button class="like" id="like_36">
+                    <img src="img/heart.png" class="heart" alt="點讚收藏">
+                </button>
+                <button class="cart" id="Loreal康是美紫熨斗寵愛加贈組" price="1099" originalPrice="0">
+                    <img src="img/shopping-cart.png" alt="商品小車">
+                </button>
+            </div>
+
+            <div class="item">
+                <img src="img/SABON玫瑰茶語沐浴油.png">
+                <div class="txt">
+                    <p>SABON 玫瑰茶語沐浴油500ml</p>
+                </div>
+                <div class="price">
+                    <p>NT$789</p>
+                </div>
+                <button class="like" id="like_37">
+                    <img src="img/heart.png" class="heart" alt="點讚收藏">
+                </button>
+                <button class="cart" id="SABON玫瑰茶語沐浴油" price="789" originalPrice="0">
+                    <img src="img/shopping-cart.png" alt="商品小車">
+                </button>
+            </div>
+
+            <div class="item">
+                <img src="img/SungboonEditor綠蕃茄緊緻安瓶40ml.png">
+                <div class="txt">
+                    <p>SungboonEditor綠蕃茄緊緻安瓶40ml</p>
+                </div>
+                <div class="price">
+                    <p>NT$599</p>
+                </div>
+                <button class="like" id="like_38">
+                    <img src="img/heart.png" class="heart" alt="點讚收藏">
+                </button>
+                <button class="cart" id="SungboonEditor綠蕃茄緊緻安瓶40ml" price="599" originalPrice="0">
+                    <img src="img/shopping-cart.png" alt="商品小車">
+                </button>
+            </div>
+
+            <div class="item">
+                <img src="img/飛我莫屬限量眼彩盤_甜杏桃.png">
+                <div class="txt">
+                    <p>1028 飛我莫屬限量眼彩盤 甜杏桃</p>
+                </div>
+                <div class="price">
+                    <p>NT$399</p>
+                </div>
+                <button class="like" id="like_39">
+                    <img src="img/heart.png" class="heart" alt="點讚收藏">
+                </button>
+                <button class="cart" id="飛我莫屬限量眼彩盤_甜杏桃" price="399" originalPrice="0">
+                    <img src="img/shopping-cart.png" alt="商品小車">
+                </button>
+            </div>
+        </div>
+
+        <a href="#"><img loading="lazy" class="image-banner__picture" alt="BannerA-1" src="img/看更多按鈕.png"></a>
+    </div>
+
+    <div class="slider-wrapper5">
+        <img class="slider-item" src="img/商品任選.png" alt="Slide1">
+        <img class="slider-item" src="img/超人氣髮品.png" alt="Slide2">
+        <img class="slider-item" src="img/萌寵年貨.png" alt="Slide3">
+    </div>
+
+<!-- 第五區塊商品 -->
+    <!-- 第一排 -->
+    <div class="products_fifthPart">
+        <div class="product-container--wrapper5">
+            <div class="item">
+                <img src="img/Alpecin擊退白髮咖啡因泡沫染髮露200mlx2入團購組.png">
+                <div class="txt">
+                    <p>Alpecin擊退白髮咖啡因泡沫染髮露200ml x2入團購組</p>
+                </div>
+                <div class="price">
+                    <p>NT$1,328</p>
+                </div>
+                <button class="like" id="like_40">
+                    <img src="img/heart.png" class="heart" alt="點讚收藏">
+                </button>
+                <button class="cart" id="Alpecin擊退白髮咖啡因泡沫染髮露200mlx2入團購組" price="1328" originalPrice="0">
+                    <img src="img/shopping-cart.png" alt="商品小車">
+                </button>
+            </div>
+
+            <div class="item">
+                <img src="img/風倍清室內用抗菌消臭防臭劑.png">
+                <div class="txt">
+                    <p>風倍清室內用抗菌消臭防臭劑（清新白茶）7ML(2/10依序出貨)</p>
+                </div>
+                <div class="price">
+                    <p>NT$119</p>
+                </div>
+                <button class="like" id="like_41">
+                    <img src="img/heart.png" class="heart" alt="點讚收藏">
+                </button>
+                <button class="cart" id="風倍清室內用抗菌消臭防臭劑" price="119" originalPrice="0">
+                    <img src="img/shopping-cart.png" alt="商品小車">
+                </button>
+            </div>
+
+            <div class="item">
+                <img src="img/齒磨殿堂_專業修補牙膏.png">
+                <div class="txt">
+                    <p>齒磨殿堂 專業修補牙膏-極致淨白 60g</p>
+                </div>
+                <div class="price">
+                    <p>NT$780</p>
+                </div>
+                <button class="like" id="like_42">
+                    <img src="img/heart.png" class="heart" alt="點讚收藏">
+                </button>
+                <button class="cart" id="齒磨殿堂_專業修補牙膏" price="780" originalPrice="0">
+                    <img src="img/shopping-cart.png" alt="商品小車">
+                </button>
+            </div>
+
+            <div class="item">
+                <img src="img/澎澎Soft_親膚舒緩沐浴乳600g.png">
+                <div class="txt">
+                    <p>澎澎Soft 親膚舒緩沐浴乳600g</p>
+                </div>
+                <div class="price">
+                    <p>NT$199</p>
+                </div>
+                <button class="like" id="like_43">
+                    <img src="img/heart.png" class="heart" alt="點讚收藏">
+                </button>
+                <button class="cart" id="澎澎Soft_親膚舒緩沐浴乳600g" price="199" originalPrice="0">
+                    <img src="img/shopping-cart.png" alt="商品小車">
+                </button>
+            </div>
+        </div>
+    
+        <!-- 第二排 -->
+        <div class="product-container--wrapper5">
+            <div class="item">
+                <img src="img/摩力諾美國棉立體斜紋極柔毛巾_多色可選.png">
+                <div class="txt">
+                    <p>【MORINO】摩力諾美國棉立體斜紋極柔毛巾-多色可選</p>
+                </div>
+                <div class="price">
+                    <p>NT$149</p>
+                </div>
+                <button class="like" id="like_44">
+                    <img src="img/heart.png" class="heart" alt="點讚收藏">
+                </button>
+                <button class="cart" id="摩力諾美國棉立體斜紋極柔毛巾_多色可選" price="149" originalPrice="0">
+                    <img src="img/shopping-cart.png" alt="商品小車">
+                </button>
+            </div>
+
+            <div class="item">
+                <img src="img/健康機能系列_皮毛保健配方600g.png">
+                <div class="txt">
+                    <p>【寶多福】健康機能系列-皮毛保健配方600g/袋</p>
+                </div>
+                <div class="price">
+                    <p>NT$159</p>
+                </div>
+                <button class="like" id="like_45">
+                    <img src="img/heart.png" class="heart" alt="點讚收藏">
+                </button>
+                <button class="cart" id="健康機能系列_皮毛保健配方600g" price="159" originalPrice="0">
+                    <img src="img/shopping-cart.png" alt="商品小車">
+                </button>
+            </div>
+
+            <div class="item">
+                <img src="img/英國潔_Astonish_瞬效除黴去污清潔.png">
+                <div class="txt">
+                    <p>英國潔 Astonish 瞬效除黴去污清潔</p>
+                </div>
+                <div class="price">
+                    <p>NT$249</p>
+                </div>
+                <button class="like" id="like_46">
+                    <img src="img/heart.png" class="heart" alt="點讚收藏">
+                </button>
+                <button class="cart" id="英國潔_Astonish_瞬效除黴去污清潔" price="249" originalPrice="0">
+                    <img src="img/shopping-cart.png" alt="商品小車">
+                </button>
+            </div>
+        </div> 
+        <a href="#"><img loading="lazy" class="image-banner__picture" alt="BannerA-1" src="img/看更多按鈕.png"></a>
+    </div>
+
+    <div class="slider-wrapper6">
+        <img class="slider-item" src="img/來一客.png" alt="Slide1">
+        <img class="slider-item" src="img/星巴克禮盒.png" alt="Slide2">
+        <img class="slider-item" src="img/馬玉山.png" alt="Slide3">
+    </div>
+
+<!-- 第六區塊商品 -->
+    <!-- 第一排 -->
+    <div class="products_sixthPart">
+        <div class="product-container--wrapper6">
+            <div class="item">
+                <img src="img/日本甘樂鮮果實軟糖_檸檬口味.png">
+                <div class="txt">
+                    <p>日本甘樂鮮果實軟糖-檸檬口味(包裝隨機出貨)</p>
+                </div>
+                <div class="price">
+                    <p>NT$59</p>
+                </div>
+                <button class="like" id="like_47">
+                    <img src="img/heart.png" class="heart" alt="點讚收藏">
+                </button>
+                <button class="cart" id="日本甘樂鮮果實軟糖_檸檬口味" price="59" originalPrice="0">
+                    <img src="img/shopping-cart.png" alt="商品小車">
+                </button>
+            </div>
+
+            <div class="item">
+                <img src="img/蘋果西打600mlx24入.png">
+                <div class="txt">
+                    <p>《大西洋》蘋果西打600mlx24入_廠商直送</p>
+                </div>
+                <div class="price">
+                    <p>NT$799</p>
+                </div>
+                <button class="like" id="like_48">
+                    <img src="img/heart.png" class="heart" alt="點讚收藏">
+                </button>
+                <button class="cart" id="蘋果西打600mlx24入" price="799" originalPrice="0">
+                    <img src="img/shopping-cart.png" alt="商品小車">
+                </button>
+            </div>
+
+            <div class="item">
+                <img src="img/2025白沙屯媽祖遶境旺旺仙貝.png">
+                <div class="txt">
+                    <p>2025白沙屯媽祖遶境旺旺仙貝</p>
+                </div>
+                <div class="price">
+                    <p>NT$35</p>
+                </div>
+                <button class="like" id="like_49">
+                    <img src="img/heart.png" class="heart" alt="點讚收藏">
+                </button>
+                <button class="cart" id="2025白沙屯媽祖遶境旺旺仙貝" price="35" originalPrice="0">
+                    <img src="img/shopping-cart.png" alt="商品小車">
+                </button>
+            </div>
+
+            <div class="item">
+                <img src="img/來一客杯湯_香菇雞湯.png">
+                <div class="txt">
+                    <p>來一客杯湯-香菇雞湯</p>
+                </div>
+                <div class="price">
+                    <p>NT$25</p>
+                </div>
+                <button class="like" id="like_50">
+                    <img src="img/heart.png" class="heart" alt="點讚收藏">
+                </button>
+                <button class="cart" id="來一客杯湯_香菇雞湯" price="25" originalPrice="0">
+                    <img src="img/shopping-cart.png" alt="商品小車">
+                </button>
+            </div>
+        </div>
+
+        <!-- 第二排 -->
+        <div class="product-container--wrapper6">
+            <div class="item">
+                <img src="img/來一客杯麵辛辣香菇風味.png">
+                <div class="txt">
+                    <p>來一客杯麵辛辣香菇風味(三合一)杯</p>
+                </div>
+                <div class="price">
+                    <p>NT$99</p>
+                </div>
+                <button class="like" id="like_51">
+                    <img src="img/heart.png" class="heart" alt="點讚收藏">
+                </button>
+                <button class="cart" id="來一客杯麵辛辣香菇風味" price="99" originalPrice="0">
+                    <img src="img/shopping-cart.png" alt="商品小車">
+                </button>
+            </div>
+
+            <div class="item">
+                <img src="img/星巴克綜合堅果米果禮盒.png">
+                <div class="txt">
+                    <p>星巴克綜合堅果米果禮盒</p>
+                </div>
+                <div class="price">
+                    <p>NT$697</p>
+                </div>
+                <button class="like" id="like_52">
+                    <img src="img/heart.png" class="heart" alt="點讚收藏">
+                </button>
+                <button class="cart" id="星巴克綜合堅果米果禮盒" price="697" originalPrice="0">
+                    <img src="img/shopping-cart.png" alt="商品小車">
+                </button>
+            </div>
+
+            <div class="item">
+                <img src="img/美研社玫瑰花果茶PET400mlx24入.png">
+                <div class="txt">
+                    <p>美研社玫瑰花果茶PET400ml x24入</p>
+                </div>
+                <div class="price">
+                    <p>NT$672</p>
+                </div>
+                <button class="like" id="like_53">
+                    <img src="img/heart.png" class="heart" alt="點讚收藏">
+                </button>
+                <button class="cart" id="美研社玫瑰花果茶PET400mlx24入" price="672" originalPrice="0">
+                    <img src="img/shopping-cart.png" alt="商品小車">
+                </button>
+            </div>
+
+            <div class="item">
+                <img src="img/瑞奇蜂蜜韓式醬味米果100g.png">
+                <div class="txt">
+                    <p>瑞奇蜂蜜韓式醬味米果100g</p>
+                </div>
+                <div class="price">
+                    <p>NT$49</p>
+                </div>
+                <button class="like" id="like_54">
+                    <img src="img/heart.png" class="heart" alt="點讚收藏">
+                </button>
+                <button class="cart" id="瑞奇蜂蜜韓式醬味米果100g" price="49" originalPrice="0">
+                    <img src="img/shopping-cart.png" alt="商品小車">
+                </button>
+            </div>
+        </div>
+
+        <a href="#"><img loading="lazy" class="image-banner__picture" alt="BannerA-1" src="img/看更多按鈕.png"></a>
+    </div>
+
+    <div class="slider-wrapper7">
+        <img class="slider-item" src="img/冬日夢鄉.png" alt="Slide1">
+        <img class="slider-item" src="img/財氣包夾.png" alt="Slide2">
+        <img class="slider-item" src="img/百貨精選.png" alt="Slide3">
+    </div>
+
+<!-- 第七區塊商品 -->
+    <!-- 第一排 -->
+    <div class="products_seventhPart">
+        <div class="product-container--wrapper7">
+            <div class="item">
+                <img src="img/金鑽不沾雙鍋四件組_28cm.png">
+                <div class="txt">
+                    <p>【鍋寶】 金鑽不沾雙鍋四件組 28cm （玫瑰金）（28CM炒鍋＋28CM平底鍋＋蓋＋木鏟）...</p>
+                </div>
+                <div class="price">
+                    <p>NT$990</p>
+                </div>
+                <button class="like" id="like_55">
+                    <img src="img/heart.png" class="heart" alt="點讚收藏">
+                </button>
+                <button class="cart" id="金鑽不沾雙鍋四件組_28cm" price="990" originalPrice="0">
+                    <img src="img/shopping-cart.png" alt="商品小車">
+                </button>
+            </div>
+
+            <div class="item">
+                <img src="img/托斯卡納兔毛×雲芙絨泡泡毯.png">
+                <div class="txt">
+                    <p>【ANADiva】輕奢質感 托斯卡納兔毛×雲芙絨泡泡毯(多色任選/150x200cm)(毛毯/毯子/保暖毯)...</p>
+                </div>
+                <div class="price">
+                    <p>NT$849</p>
+                </div>
+                <button class="like" id="like_56">
+                    <img src="img/heart.png" class="heart" alt="點讚收藏">
+                </button>
+                <button class="cart" id="托斯卡納兔毛×雲芙絨泡泡毯" price="849" originalPrice="0">
+                    <img src="img/shopping-cart.png" alt="商品小車">
+                </button>
+            </div>
+
+            <div class="item">
+                <img src="img/床包組.png">
+                <div class="txt">
+                    <p>【Albert家居】台灣製 100%精梳純棉枕套床包組【任選兩件指定賣場】(單人/雙人/加...</p>
+                </div>
+                <div class="price">
+                    <p>NT$990</p>
+                </div>
+                <button class="like" id="like_57">
+                    <img src="img/heart.png" class="heart" alt="點讚收藏">
+                </button>
+                <button class="cart" id="托斯卡納兔毛×雲芙絨泡泡毯" price="990" originalPrice="0">
+                    <img src="img/shopping-cart.png" alt="商品小車">
+                </button>
+            </div>
+
+            <div class="item">
+                <img src="img/LONGCHAMP_LE_PLIAGE_ENERGY_小手提包.png">
+                <div class="txt">
+                    <p>LONGCHAMP LE PLIAGE ENERGY 小手提包(黑色)</p>
+                </div>
+                <div class="price">
+                    <p>NT$4,840</p>
+                </div>
+                <button class="like" id="like_58">
+                    <img src="img/heart.png" class="heart" alt="點讚收藏">
+                </button>
+                <button class="cart" id="LONGCHAMP_LE_PLIAGE_ENERGY_小手提包" price="4840" originalPrice="0">
+                    <img src="img/shopping-cart.png" alt="商品小車">
+                </button>
+            </div>
+        </div>
+
+        <!-- 第二排 -->
+        <div class="product-container--wrapper7">
+            <div class="item">
+                <img src="img/雙動力智慧洗地機.png">
+                <div class="txt">
+                    <p>【Haier 海爾】雙動力智慧洗地機 X9_廠商直送</p>
+                </div>
+                <div class="price">
+                    <p>NT$9,999</p>
+                </div>
+                <button class="like" id="like_59">
+                    <img src="img/heart.png" class="heart" alt="點讚收藏">
+                </button>
+                <button class="cart" id="雙動力智慧洗地機" price="9999" originalPrice="0">
+                    <img src="img/shopping-cart.png" alt="商品小車">
+                </button>
+            </div>
+
+            <div class="item">
+                <img src="img/做自己的心理治療師.png">
+                <div class="txt">
+                    <p>做自己的心理治療師：超過25 種療癒技術，擺脫情緒內耗，提升自我認同</p>
+                </div>
+                <div class="price">
+                    <p>NT$336</p>
+                </div>
+                <button class="like" id="like_60">
+                    <img src="img/heart.png" class="heart" alt="點讚收藏">
+                </button>
+                <button class="cart" id="做自己的心理治療師" price="336" originalPrice="0">
+                    <img src="img/shopping-cart.png" alt="商品小車">
+                </button>
+            </div>
+
+            <div class="item">
+                <img src="img/FunCube放心充十合一多功能行動電源.png">
+                <div class="txt">
+                    <p>PHILIPS 飛利浦 FunCube放心充十合一多功能行動電源 DLP4347CB★</p>
+                </div>
+                <div class="price">
+                    <p>NT$1,490</p>
+                </div>
+                <button class="like" id="like_61">
+                    <img src="img/heart.png" class="heart" alt="點讚收藏">
+                </button>
+                <button class="cart" id="FunCube放心充十合一多功能行動電源" price="1490" originalPrice="0">
+                    <img src="img/shopping-cart.png" alt="商品小車">
+                </button>
+            </div>
+
+            <div class="item">
+                <img src="img/SNOOPY史努比經典系列拉鍊款前提把28吋胖胖行李箱.png">
+                <div class="txt">
+                    <p>【卡若特品牌館】SNOOPY史努比經典系列拉鍊款前提把28吋胖胖行李箱(2年保固)</p>
+                </div>
+                <div class="price">
+                    <p>NT$4,180</p>
+                </div>
+                <button class="like" id="like_62">
+                    <img src="img/heart.png" class="heart" alt="點讚收藏">
+                </button>
+                <button class="cart" id="SNOOPY史努比經典系列拉鍊款前提把28吋胖胖行李箱" price="4180" originalPrice="0">
+                    <img src="img/shopping-cart.png" alt="商品小車">
+                </button>
+            </div>
+        </div>
+
+        <p class="special_event">精選活動推薦</p>
+    </div>
+</div>
+    <footer class="footer">
+        <div class="container">
+            <div class="row">
+                <div class="footer-col">
+                    <img src="img/底部小圖.png">
+                </div>
+                <div class="footer-col">
+                    <h4>關於我們</h4>
+                    <ul>
+                        <li><a href="#">品牌故事</a></li>
+                        <li><a href="#">商店簡介</a></li>
+                        <li><a href="#">門市資訊</a></li>
+                        <li><a href="#">隱私權及網站使用條款</a></li>
+                    </ul>
+                </div>
+                <div class="footer-col">
+                    <h4>客服資訊</h4>
+                    <ul>
+                        <li><a href="#">購物說明</a></li>
+                        <li><a href="#">客服留言</a></li>
+                        <li><a href="#">會員權益聲明</a></li>
+                        <li><a href="#">聯絡我們</a></li>
+                    </ul>
+                </div>
+                <div class="footer-col">
+                    <h4>官方APP</h4>
+                    <div class="QR">
+                        <img src="img/QRCode.png">
+                    </div>
+                </div>
+            </div>
+        </div>
+   </footer>
+<!-- 下面是bg的div -->
+<!-- </div> -->
+   <div class="popup-window">
+        <div id="pro_img"></div>
+        <p class="pro_name"><b>#</b></p>
+        <div class="pro_price_old">
+            <h4>NT</h4><p class="origin_price"></p>
+        </div>
+        <div class="pro_price_now">
+            <h4>NT</h4><p class="pro_price">#</p>
+        </div>
+        <button class="cancel">X</button>
+        <div class="more-or-less">
+            <button class="add-or-minus" isAdd="0">-</button>
+            <p class="howMany">1</p>
+            <button class="add-or-minus" isAdd="1">+</button>
+        </div>
+        <button class="add_to_cart">加入購物車</button>
+   </div>
+
+   <div class="add_success">
+        <img src="img/icons8-check.gif" alt="加入成功"><p class="success">加入成功</p>
+   </div>
+</div>
+   
+</body>
+</html>
