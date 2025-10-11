@@ -646,7 +646,7 @@ body{
     position: fixed;
     display: none;
     top: 200px;
-    left: 300px;
+    left: 400px;
     background-color: #ffffff;
     width: 700px;
     height: 300px;
@@ -682,7 +682,7 @@ body{
     position: fixed;
     width: 180px;
     height: 180px;
-    left: 450px;
+    left: 430px;
     top: 220px;
 }
 
