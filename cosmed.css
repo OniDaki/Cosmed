@@ -783,10 +783,10 @@ body{
 
 #products-chosen{
     position: absolute;
-    left: 1100px;
+    left: 1000px;
     right: 350px;
     top: 60px;
-    /* width: 1000px; */
+    width: 800px; 
     padding: 20px;
     padding-left: 10px;
     border-radius: 5px;
