@@ -786,7 +786,7 @@ body{
     left: 1000px;
     right: 200px;
     top: 60px; 
-	width: 1000px;
+	width: auto;
     padding: 20px;
     padding-left: 10px;
     border-radius: 5px;
